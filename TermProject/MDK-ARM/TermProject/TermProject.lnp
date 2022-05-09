@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"termproject\startup_stm32l100xc.o"
+"termproject\main.o"
+"termproject\stm32l1xx_it.o"
+"termproject\stm32l1xx_hal_msp.o"
+"termproject\stm32l1xx_hal_i2c.o"
+"termproject\stm32l1xx_hal.o"
+"termproject\stm32l1xx_hal_rcc.o"
+"termproject\stm32l1xx_hal_rcc_ex.o"
+"termproject\stm32l1xx_hal_flash.o"
+"termproject\stm32l1xx_hal_flash_ex.o"
+"termproject\stm32l1xx_hal_flash_ramfunc.o"
+"termproject\stm32l1xx_hal_gpio.o"
+"termproject\stm32l1xx_hal_dma.o"
+"termproject\stm32l1xx_hal_pwr.o"
+"termproject\stm32l1xx_hal_pwr_ex.o"
+"termproject\stm32l1xx_hal_cortex.o"
+"termproject\stm32l1xx_hal_exti.o"
+"termproject\stm32l1xx_hal_tim.o"
+"termproject\stm32l1xx_hal_tim_ex.o"
+"termproject\system_stm32l1xx.o"
+--strict --scatter "TermProject\TermProject.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TermProject.map" -o TermProject\TermProject.axf
